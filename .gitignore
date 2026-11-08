@@ -1,0 +1,14 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# python
+__pycache__/
+*.pyc
+
+# local overrides
+*.local.md
+.env
