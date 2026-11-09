@@ -20,7 +20,19 @@ mv ~/.dsh/skills ~/.dsh/skills.bak.$(date +%s)
 git clone https://github.com/Mekathun/dsh-skills.git ~/.dsh/skills
 ```
 
-> 不在本仓库里的 skill（`office`、`music-studio`、`fishtalk`、`nekowhale-stickers`、`browser-skill`、`diagnose-windows-sandbox-acl` 等）是 DSH 或插件自带的，装好对应的 DSH / 插件就有，不用同步。
+## 不在本仓库里的 skill
+
+下面这些也出现在对话的 skill 列表里，但不在 `~/.dsh/skills`，它们是 DSH 自带（office 系列随安装包）或由 bundle / 插件带进来的。换电脑装上同样的 DSH 版本和这些 bundle 就有，不用（也不该）复制进 skills 目录，否则同名 skill 会重复注册。
+
+| skill | 来源 |
+| --- | --- |
+| office / office-docx / office-pptx / office-xlsx / office-render / office-export-pdf / office-recalculate | DSH 安装包自带 `resources/runtime/office-skills` |
+| minecraft-intake / -java-build / -paper-plugin / -spigot-legacy / -fabric-mod / -forge-mod / -neoforge-mod / -major-mods | `minecraft-dev` bundle |
+| music-studio | `@jypjypjypjyp/dsh-music-studio` bundle |
+| nekowhale-stickers | `dsh-nekowhale-stickers` 插件 |
+| humanizer / fishtalk / media-use / hyperframes / hyperframes-cli / hyperframes-registry / browser-skill / diagnose-windows-sandbox-acl / web-design-skill / reverse-engineer-anything | bundle / 插件提供 |
+
+新增或删除 skill 后，跑 `python .tools/gen_readme.py` 重新生成本文件。
 
 ## 清单
 
