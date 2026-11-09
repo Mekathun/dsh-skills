@@ -34,6 +34,8 @@ git clone https://github.com/Mekathun/dsh-skills.git ~/.dsh/skills
 
 新增或删除 skill 后，跑 `python .tools/gen_readme.py` 重新生成本文件。
 
+插件（DSH 的 npm 插件、MCP server、换电脑怎么装）单独放在 [PLUGINS.md](PLUGINS.md)。
+
 ## 清单
 
 ### 学术与研究（18）
